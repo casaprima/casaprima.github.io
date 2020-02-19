@@ -47,6 +47,7 @@ body {
 }
 .text-link {
   text-decoration: underline;
+  color: black;
 }
 .text-link:hover {
   text-decoration: line-through;
@@ -98,6 +99,7 @@ body {
   font-size: calc(var(--h1-font-size-min) * 1em);
   padding: 0 13px;
   padding-top: 0.5em;
+  line-height: 1.3em;
 }
 .text {
   font-variation-settings: "wght" 150, "wdth" 500;
@@ -123,11 +125,22 @@ body {
 .project {
   width: 100%;
 }
-.specimen-image {
+.specimen-image,
+.specimen-image-small,
+.specimen-image-med {
   width: 100%;
+  margin: 0 auto;
 }
 .specimen-text {
-  padding: 0 0.7em;
+  padding: 1em 0.7em;
+}
+.video-fit {
+  width: 100%;
+  height: auto;
+}
+.random-row {
+  display: flex;
+  flex-flow: column nowrap;
 }
 .footer-wrapper {
   border-top: 1px solid black;
@@ -255,6 +268,12 @@ body {
     display: block;
     min-height: 80px;
   }
+  .specimen-image-small {
+    width: 50%;
+  }
+  .specimen-image-med {
+    width: 60%;
+  }
   .text-wrapper {
     padding: 0 0.7em;
   }
@@ -315,7 +334,7 @@ body {
     grid-row: 1 / 2;
   }
   .specimen-c2 {
-    grid-column: 2 / 3;
+    grid-column: 2 / 32;
     grid-row: 1 / 2;
   }
 }
@@ -338,6 +357,12 @@ body {
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .specimen-image-small {
+    width: 40%;
+  }
+  .specimen-image-med {
+    width: 50%;
   }
   .specimen-text {
     width: 75em;
