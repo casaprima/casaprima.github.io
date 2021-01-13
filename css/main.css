@@ -183,6 +183,9 @@ body {
 .nav-c4 {
   grid-column: 4/5;
 }
+.specimen-image {
+  margin-bottom: -7px;
+}
 .section-c1 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
@@ -199,6 +202,9 @@ body {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
+.random-r1c1 {
+    margin-bottom: -7px;
+  }
 @media screen and (min-width: 24.15em) {
   .main-nav {
     font-variation-settings: "wght" 100, "wdth" 400;
@@ -261,13 +267,13 @@ body {
     min-height: 7em;
     height: 15vh;
   }
-  .img-container::before,
+  /*.img-container::before,
   .projects-wrapper::before,
   .specimen-wrapper::before {
     content: "";
     display: block;
     min-height: 80px;
-  }
+  }*/
   .specimen-image-small {
     width: 50%;
   }
